@@ -11,11 +11,11 @@ git学习指南（笔记）
 
 ```sh
 
-$ 链接远程仓库的两种方法
-$ 链接远程仓库git remote add origin git@github.com:FengHanC/learngit.git 
+￥ 链接远程仓库的两种方法
+1、 链接远程仓库git remote add origin git@github.com:FengHanC/learngit.git 
 （仓库链接格式：git@github.com:用户名/仓库名.git）;
-$ 在GitHub上创建并克隆仓库
-￥ git clone git@github.com:FengHanC/learngit.git
+2、 在GitHub上创建并克隆仓库
+$ git clone git@github.com:FengHanC/learngit.git
 （格式同上）这时本地就会有一个仓库了（cd：指定仓库存放位置）
 $ 远程仓库修改会影响本地的提交
 $ 这时就需要用到git pull（推送）来同步本地仓库
