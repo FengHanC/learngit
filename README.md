@@ -1,5 +1,7 @@
 # learngit
-git初学者
+
+git学习指南（笔记）
+
 ## git使用指南
 - git init 初始化（创建）仓库
 - git add test.txt添加到仓库
