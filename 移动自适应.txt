@@ -1,4 +1,6 @@
-(function (doc, win) {
+# 以下两个代码都能使H5在640px下进行开发适配所有移动端设备（没有实际测试所有设备）
+### 第一种
+* `(function (doc, win) {
     var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
         recalc = function () {
@@ -10,4 +12,19 @@
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
-})(document, window);
+})(document, window);`
+###第二种(要给viewport加id='viewport')
+* `! function() {
+        function a() {
+          var dw = 640;
+          var viewport = document.getElementById('viewport');
+          viewport.setAttribute('content', 'width=' + dw + ', user-scalable=no')
+        }
+        var b = null;
+        window.addEventListener('resize', function() {
+          clearTimeout(b);
+          b = setTimeout(a, 600)
+        }, !1);
+        a()
+      }(window);
+`
