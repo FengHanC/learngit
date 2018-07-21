@@ -12,8 +12,9 @@
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
-})(document, window);`
-###第二种(要给viewport加id='viewport')
+})(document, window);
+`
+### 第二种(要给viewport加id='viewport')
 * `! function() {
         function a() {
           var dw = 640;
