@@ -3,6 +3,7 @@
 ***
 
 git学习指南（笔记）
+更多内容请移步wiki查看
 
 ## git使用指南
 * git init 初始化（创建）仓库
@@ -36,6 +37,3 @@ git学习指南（笔记）
 * `git log` 查看提交日志（查看日志id）
 * `git reset --hard id` 日志id（取一小段6-8个左右，git会自动补全）
 
-# 本地对仓库文件的修改(删除)会出现上传错误问题
-  * 目前解决方法是删除.git文件夹里的.COMMIT_EDITMSG.swp文件即可重新上传
-  * 也可以直接在运行"git rm .git/.COMMIT_EDITMSG.swp"
