@@ -5,6 +5,11 @@
 git学习指南（笔记）
 更多内容请移步wiki查看
 
+## 创建SSH Key：
+* $ ssh-keygen -t rsa -C “youremail@example.com” 
+* 回车三次生成 .ssh文件
+* 登陆GitHub，打开“Account settings”，“SSH Keys”页面：然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+
 ## git使用指南
 * git init 初始化（创建）仓库
 
