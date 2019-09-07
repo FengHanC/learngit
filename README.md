@@ -32,6 +32,7 @@ git学习指南（笔记）
 
 # 创建并切换分支
 $ git checkout -b dev 
+合并某分支到当前分支：git merge <name>
 
 # 链接远程仓库的两种方法
 1. * **链接远程仓库`git remote add origin git@github.com:FengHanC/learngit.git`** 
@@ -52,4 +53,5 @@ userA 提交了一个01.txt 文件
 userB 也提交一个01.txt 文件造成冲突
 解决方式：
 1. 先拉取线上版本git pull
-2. 如果
+2. 如果git无法自动合并需手动修改冲突
+冲突会使用<<<< 本地版本==== 线上版本 >>>>区分
