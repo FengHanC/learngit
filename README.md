@@ -30,6 +30,9 @@ git学习指南（笔记）
 * git push -u origin master 这是提交到远程仓库操作
 * git diff 查看文件修改信息
 
+# 创建并切换分支
+$ git checkout -b dev 
+
 # 链接远程仓库的两种方法
 1. * **链接远程仓库`git remote add origin git@github.com:FengHanC/learngit.git`** 
    * _（仓库链接格式：git@github.com:用户名/仓库名.git）_
@@ -44,3 +47,9 @@ git学习指南（笔记）
 * `git log` 查看提交日志（查看日志id）
 * `git reset --hard id` 日志id（取一小段6-8个左右，git会自动补全）
 
+## 常见错误
+userA 提交了一个01.txt 文件
+userB 也提交一个01.txt 文件造成冲突
+解决方式：
+1. 先拉取线上版本git pull
+2. 如果
